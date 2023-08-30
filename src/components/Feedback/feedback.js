@@ -1,12 +1,17 @@
 import React from 'react';
 import './feedback.scss';
 
-function Feedback() {
+interface FeedbackProps {
+  onClose: () => void;
+}
+
+function Feedback(props: FeedbackProps) {
   return (
-    <div className="feedback-container">
-      <h2>Feedback</h2>
+    <div className="modal">
+      <h3>Feedback</h3>
       <textarea placeholder="Share your experience..."></textarea>
       <button>Submit</button>
+      <button onClick={props.onClose}>Close</button>
     </div>
   );
 }

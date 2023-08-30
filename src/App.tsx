@@ -12,15 +12,20 @@ function App() {
     setLoggedIn(true);
   };
 
+  const handleLogout = () => {
+    setLoggedIn(false); 
+};
+
   return (
       <div className="app-container">
 
         <Routes>
           <Route path="/register" element={<RegistrationForm />} />
 
-          <Route path="/dashboard" element={loggedIn ? <Dashboard /> : <Navigate to="/" />} />
+          <Route path="/dashboard" element={loggedIn ? <Dashboard onLogout={handleLogout} /> : <Navigate to="/" />} />
 
-          <Route path="/feedback" element={<Feedback />} />
+
+          <Route path="/feedback" element={<Feedback onClose={() => { /* Handle close behavior */ }} />} />
 
           <Route path="/" element={loggedIn ? <Navigate to="/dashboard" /> : <HomePage onLogin={handleLogin} />} />
         </Routes>
