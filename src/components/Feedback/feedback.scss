@@ -1,0 +1,29 @@
+.feedback-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  
+    h2 {
+      margin-top: 0;
+    }
+  
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      height: 100px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
