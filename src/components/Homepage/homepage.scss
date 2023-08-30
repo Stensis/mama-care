@@ -1,0 +1,41 @@
+.homepage-container {
+    // background-image: url(${bgImage});
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://media.istockphoto.com/id/1340020013/photo/close-up-of-african-pregnant-woman-holding-her-belly-focus-on-hands.jpg?s=612x612&w=0&k=20&c=dXNJJjknpDna2a1HKoZdo2GUaGzTPjrWQ5RNR5xltuw=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #e6d1d1;  // Adjust text colors for visibility against the image
+    }
+  
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #ecd6d6;  // Adjust text colors for visibility against the image
+    }
+  
+    form {
+      button {
+        padding: 10px 20px;
+        background-color: #b4bbc4;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        border-radius: 20px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #00b327;
+        }
+      }
+    }
+}
